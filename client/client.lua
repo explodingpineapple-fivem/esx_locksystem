@@ -212,8 +212,8 @@ end)
 
 ---- Piece of code from Scott's InteractSound script : https://forum.fivem.net/t/release-play-custom-sounds-for-interactions/8282
 -- I've decided to use only one part of its script so that administrators don't have to download more scripts. I hope you won't forget to thank him!
-RegisterNetEvent('InteractSound_CL:PlayWithinDistance')
-AddEventHandler('InteractSound_CL:PlayWithinDistance', function(playerNetId, maxDistance, soundFile, soundVolume)
+RegisterNetEvent('ESXLockSysSound_CL:PlayWithinDistance')
+AddEventHandler('ESXLockSysSound_CL:PlayWithinDistance', function(playerNetId, maxDistance, soundFile, soundVolume)
     local lCoords = GetEntityCoords(GetPlayerPed(-1))
     local eCoords = GetEntityCoords(GetPlayerPed(GetPlayerFromServerId(playerNetId)))
     local distIs  = Vdist(lCoords.x, lCoords.y, lCoords.z, eCoords.x, eCoords.y, eCoords.z)

@@ -140,9 +140,9 @@ AddEventHandler("ls:updateServerVehiclePlate", function(oldPlate, newPlate)
 end)
 
 -- Piece of code from Scott's InteractSound script : https://forum.fivem.net/t/release-play-custom-sounds-for-interactions/8282
-RegisterServerEvent('InteractSound_SV:PlayWithinDistance')
-AddEventHandler('InteractSound_SV:PlayWithinDistance', function(maxDistance, soundFile, soundVolume)
-    TriggerClientEvent('InteractSound_CL:PlayWithinDistance', -1, source, maxDistance, soundFile, soundVolume)
+RegisterServerEvent('ESXLockSysSound_SV:PlayWithinDistance')
+AddEventHandler('ESXLockSysSound_SV:PlayWithinDistance', function(maxDistance, soundFile, soundVolume)
+    TriggerClientEvent('ESXLockSysSound_CL:PlayWithinDistance', -1, source, maxDistance, soundFile, soundVolume)
 end)
 
 if Config.versionChecker then
